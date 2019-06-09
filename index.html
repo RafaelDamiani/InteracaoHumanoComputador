@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Pedagogia UFPR</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+  <link rel='stylesheet' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css'>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <link rel='stylesheet'
+    href='http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css'>
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    .footer{
+      bottom:0;
+      height:290px;
+      margin-top:40px;
+      width:100%;
+      padding-bottom: 10px;
+      background: #374147;
+      color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <!-- Form Name -->
+
+  <nav>
+      <a id="resp-menu" class="responsive-menu" href="#"><i class="fa fa-reorder"></i> Menu</a>
+      <ul class="menu">
+        <li><a class="homer" href="home.html"><i class="fa fa-home"></i> HOME</a>
+  
+        </li>
+  
+        <li><a href="#"><i class="fa fa-user"></i> SOBRE O CURSO</a>
+          <ul class="sub-menu">
+            <li><a href="sobre.html">Apresentação</a></li>  
+            <li><a href="projeto_pedagogico.html">Projeto Pedagógico do Curso</a>
+            <li><a href="processo_seletivo.html">Processo Seletivo</a>
+  
+            </li>
+  
+          </ul>
+        </li>
+  
+        </li>        
+        <li><a href="#"><i class="fa fa-sitemap"></i> ALUNOS</a>
+          <ul class="sub-menu">
+            <li><a href="estagios.html">Estágios</a></li>
+            <li><a href="tcc.html">TCCs</a>
+            <li><a href="banco_tcc.html">Banco de TCCs</a>            
+            <li><a href="https://drive.google.com/open?id=14RS1S5Y5VxTXRmgBH_NYQ-5uKIw32YhV">Atividades Formativas</a>
+            <li><a href="http://www.prograd.ufpr.br/portal/copap/formularios/">Formulários</a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#"><i class="fa fa-exclamation-triangle"></i> LINKS IMPORTANTES</a>
+          <ul class="sub-menu">
+            <li><a href="http://www.pra.ufpr.br/portal/ru/cardapio-2/">Restaurante Universitário</a></li>
+            <li><a href="http://www.pra.ufpr.br/portal/centran/sobre/onibus-intercampi/">Intercampi</a>
+            <li><a href="https://portaldoaluno.ufpr.br/aluno/login.action?error=">Portal do Aluno</a>            
+            <li><a href="pedagogia_ead.html">Pedagogia EAD</a>
+            <li><a href="http://www.prae.ufpr.br/prae/programas-da-prae/">PRAE</a>
+            </li>
+          </ul>
+          
+        <li><a href="contato.html"><i class="fa fa-envelope"></i> CONTATO</a></li>
+        <li><a href="index.html"><i class="fa fa-login"></i> CADASTRO</a>
+  
+        <li><a href="login.html"><i class="fa fa-login" id='login'></i> LOGIN</a>
+  
+      </ul>
+  </nav>
+
+  <div class="container"> 
+      <img style="width: 100%; height: 350px;;" src="logo_ufpr.jpg" alt="logo da ufpr">
+  </div>
+
+  <div class="container">
+    <br><h1 style="font-size: 36px;">Cadastro</h1><br>
+    <form class="well form-horizontal" action=" " method="post" id="contact_form">
+      <fieldset>
+        <!-- <h2><b>Cadastro de Alunos do Curso de Pedagogia</b></h2> -->
+
+        <!-- Text input-->
+
+        <div class="form-group">
+          <label class="col-md-4 control-label">Nome</label>
+          <div class="col-md-4 inputGroupContainer">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+              <input name="first_name" placeholder="Primeiro Nome" class="form-control" type="text">
+            </div>
+          </div>
+        </div>
+
+        <!-- Text input-->
+
+        <div class="form-group">
+          <label class="col-md-4 control-label">Sobrenome</label>
+          <div class="col-md-4 inputGroupContainer">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+              <input name="last_name" placeholder="Sobrenome" class="form-control" type="text">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-md-4 control-label">Tipo de Cadastro</label>
+          <div class="col-md-4 selectContainer">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+              <select name="department" class="form-control selectpicker">
+                <option value="">Selecione seu tipo de cadastro</option>
+                <option>Aluno</option>
+                <option>Professor</option>
+                <option>Servidor</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- Text input-->
+
+        <div class="form-group">
+          <label class="col-md-4 control-label">Login</label>
+          <div class="col-md-4 inputGroupContainer">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+              <input name="user_name" placeholder="Login" class="form-control" type="text">
+            </div>
+          </div>
+        </div>
+
+        <!-- Text input-->
+
+        <div class="form-group">
+          <label class="col-md-4 control-label">GRR</label>
+          <div class="col-md-4 inputGroupContainer">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+              <input name="grr" placeholder="GRR" class="form-control" type="text">
+            </div>
+          </div>
+        </div>
+
+        <!-- Text input-->
+
+        <div class="form-group">
+          <label class="col-md-4 control-label">Cidade</label>
+          <div class="col-md-4 inputGroupContainer">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+              <input name="cidade" placeholder="Cidade" class="form-control" type="text">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-md-4 control-label">Endereço</label>
+          <div class="col-md-4 inputGroupContainer">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+              <input name="endereco" placeholder="Endereço" class="form-control" type="text">
+            </div>
+          </div>
+        </div>
+
+
+        <div class="form-group">
+          <label class="col-md-4 control-label">Data de Nascimento</label>
+          <div class="col-md-4 inputGroupContainer">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+
+              <input id="dobUs" name="  " class="form-control input-lg js-date--west" type="text"
+                placeholder="_ _ /_ _ /_ _ _ _">
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-md-4 control-label">Cidade de Nascimento</label>
+          <div class="col-md-4 inputGroupContainer">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+              <input name="cidade" placeholder="Cidade de nascimento" class="form-control" type="text">
+            </div>
+          </div>
+        </div>
+        <!-- Text input-->
+
+        <div class="form-group">
+          <label class="col-md-4 control-label">Senha</label>
+          <div class="col-md-4 inputGroupContainer">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+              <input name="user_password" placeholder="Senha" class="form-control" type="password">
+            </div>
+          </div>
+        </div>
+
+        <!-- Text input-->
+
+        <div class="form-group">
+          <label class="col-md-4 control-label">Confirme sua senha</label>
+          <div class="col-md-4 inputGroupContainer">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+              <input name="confirm_password" placeholder="Confirme sua senha" class="form-control" type="password">
+            </div>
+          </div>
+        </div>
+
+        <!-- Text input-->
+        <div class="form-group">
+          <label class="col-md-4 control-label">E-Mail</label>
+          <div class="col-md-4 inputGroupContainer">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+              <input name="email" placeholder="E-Mail " class="form-control" type="text">
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Text input-->
+
+        <div class="form-group">
+          <label class="col-md-4 control-label">Telefone.</label>
+          <div class="col-md-4 inputGroupContainer">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+              <input name="contact_no" placeholder="(041)" class="form-control" type="text">
+            </div>
+          </div>
+        </div>
+
+        <!-- Select Basic -->
+
+        <!-- Success message -->
+        <div class="alert alert-success" role="alert" id="success_message">Success <i
+            class="glyphicon glyphicon-thumbs-up"></i> Success!.</div>
+
+        <!-- Button -->
+        <div class="form-group">
+          <label class="col-md-4 control-label"></label>
+          <div class="col-md-4"><br>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button type="submit"
+              class="btn btn-warning">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspEnviar <span
+                class="glyphicon glyphicon-send"></span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</button>
+          </div>
+        </div>
+
+      </fieldset>
+    </form>
+  </div>
+
+  <footer class="footer">        
+      <div style="display: inline-block; width: 25%; padding-left: 10px;">
+        <br>
+        <div style="width: 120px; margin: auto;">
+            <img style="display: inline-block" src="ananicole.jpg" alt="Foto de Ana Nicole Massaneiro" height="120" width="120"><br>
+          </div>            
+          <p style="line-height: 1.3; text-align: center; width: 100%; font-size: 14px;">
+            <br>
+            <i>Ana Nicole Massaneiro</i><br>
+            <b>Programa há 3 anos</b><br>
+            <b>Foco: </b>Desenvolvimento Mobile<br>
+            <b>Curso: </b>Tecnologia em Análise e Desenvolvimento de Sistemas<br>
+            <div style="width: 30px; margin: auto;"><a href="https://www.linkedin.com/in/ana-nicole-massaneiro/"><img src="logo_linkedin.png" alt="Logo Linkedin" height="30" width="30"></a></div>
+          </p>              
+        </div>
+        <div style="display: inline-block; width: 25%;">
+          <br>
+          <div style="width: 120px; margin: auto;">
+            <img src="rafaeldamiani.png" alt="Foto de Rafael Antonio Damiani" height="120" width="120"><br>
+          </div>            
+          <p style="line-height: 1.3; text-align: center; width: 100%; font-size: 14px;">
+            <br>
+            <i>Rafael Antonio Damiani</i><br>
+            <b>Programa há 2 anos</b><br>
+            <b>Foco: </b>Desenvolvimento Web<br>
+            <b>Curso: </b>Tecnologia em Análise e Desenvolvimento de Sistemas<br>
+            <div style="width: 30px; margin: auto;"><a href="https://www.linkedin.com/in/rafael-damiani-0a3332143/"><img src="logo_linkedin.png" alt="Logo Linkedin" height="30" width="30"></a></div>
+          </p>
+        </div>
+        <div style="display: inline-block; width: 25%;">
+          <br>
+          <div style="width: 120px; margin: auto;">
+            <img src="tiagofrancischini.png" alt="Foto de Tiago Francischini" height="120" width="120"><br>
+          </div>         
+          <p style="line-height: 1.3; text-align: center; width: 100%; font-size: 14px;">
+            <br>
+            <i>Tiago Francischini</i><br>
+            <b>Vasta experiência em manutenção de hardware</b><br>
+            <b>Foco: </b>Redes de Computadores<br>
+            <b>Curso: </b>Tecnologia em Análise e Desenvolvimento de Sistemas<br>   
+            <div style="width: 30px; margin: auto;"><a href="#"><img src="logo_linkedin.png" alt="Logo Linkedin" height="30" width="30"></a></div>
+          </p>               
+        </div>
+        <div style="float: right" class="mapouter"><div class="gmap_canvas"><iframe width="300" height="290" id="gmap_canvas" src="https://maps.google.com/maps?q=Rua%20Gal.%20Carneiro%2C%20460%20-%20Ed.%20D.%20Pedro%20I&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.pureblack.de"></a></div><style>.mapouter{position:relative;text-align:right;height:280px;width:300px;}.gmap_canvas {overflow:hidden;background:none!important;height:290px;width:300px;}</style></div>
+  </footer>  
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js'></script>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.4.5/js/bootstrapvalidator.min.js'></script>
+  <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css' rel='stylesheet' />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+
+  <script src="js/index.js"></script>
+</body>
+
+</html>
+
+
+<style>
+  @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,700,800);
+
+  *,
+  html,
+  body,
+  div,
+  dl,
+  dt,
+  dd,
+  ul,
+  ol,
+  li,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  pre,
+  form,
+  label,
+  fieldset,
+  input,
+  p,
+  blockquote,
+  th,
+  td {
+    margin: 0;
+    padding: 0;
+  }
+
+  article,
+  aside,
+  figure,
+  footer,
+  header,
+  hgroup,
+  nav,
+  section {
+    display: block;
+  }
+
+  * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  html {
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a {
+    color: #BA0707;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #BA0707;
+  }
+
+  body {
+    background: #e5e5e5;
+    color: #374147;
+    font: 14px "Open Sans", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1;
+    width: 100%;
+  }
+
+  nav {
+    display: block;
+    background: #374147;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  .menu li {
+    display: inline-block;
+    position: relative;
+    z-index: 100;
+  }
+
+  .menu li:first-child {
+    margin-left: 0;
+  }
+
+  .menu li a {
+    font-weight: 600;
+    text-decoration: none;
+    padding: 20px 15px;
+    display: block;
+    color: #fff;
+    transition: all 0.2s ease-in-out 0s;
+  }
+
+  .menu li a:hover,
+  .menu li:hover>a {
+    color: #fff;
+    background: #9ca3da;
+  }
+
+  .menu ul {
+    visibility: hidden;
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+    width: 170px;
+    position: absolute;
+    left: 0px;
+    background: #fff;
+    z-index: 99;
+    transform: translate(0, 20px);
+    transition: all 0.2s ease-out;
+  }
+
+  .menu ul:after {
+    bottom: 100%;
+    left: 20%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(255, 255, 255, 0);
+    border-bottom-color: #fff;
+    border-width: 6px;
+    margin-left: -6px;
+  }
+
+  .menu ul li {
+    display: block;
+    float: none;
+    background: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .menu ul li a {
+    font-size: 12px;
+    font-weight: normal;
+    display: block;
+    color: #797979;
+    background: #fff;
+  }
+
+  .menu ul li a:hover,
+  .menu ul li:hover>a {
+    background: #9ca3da;
+    color: #fff;
+  }
+
+  .menu li:hover>ul {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+
+  .menu ul ul {
+    left: 169px;
+    top: 0px;
+    visibility: hidden;
+    opacity: 0;
+    transform: translate(20px, 20px);
+    transition: all 0.2s ease-out;
+  }
+
+  .menu ul ul:after {
+    left: -6px;
+    top: 10%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(255, 255, 255, 0);
+    border-right-color: #fff;
+    border-width: 6px;
+    margin-top: -6px;
+  }
+
+  .menu li>ul ul:hover {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+
+  .responsive-menu {
+    display: none;
+    width: 100%;
+    padding: 20px 15px;
+    background: #374147;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  .responsive-menu:hover {
+    background: #374147;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  a.homer {
+    background: #9ca3da;
+  }
+
+  @media (min-width: 768px) and (max-width: 979px) {
+    .mainWrap {
+      width: 768px;
+    }
+
+    .menu ul {
+      top: 37px;
+    }
+
+    .menu li a {
+      font-size: 12px;
+    }
+
+    a.homer {
+      background: #374147;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .mainWrap {
+      width: auto;
+      padding: 50px 20px;
+    }
+
+    .menu {
+      display: none;
+    }
+
+    .responsive-menu {
+      display: block;
+    }
+
+    nav {
+      margin: 0;
+      background: none;
+    }
+
+    .menu li {
+      display: block;
+      margin: 0;
+    }
+
+    .menu li a {
+      background: #fff;
+      color: #797979;
+    }
+
+    .menu li a:hover,
+    .menu li:hover>a {
+      background: #9ca3da;
+      color: #fff;
+    }
+
+    .menu ul {
+      visibility: hidden;
+      opacity: 0;
+      top: 0;
+      left: 0;
+      width: 100%;
+      transform: initial;
+    }
+
+    .menu li:hover>ul {
+      visibility: visible;
+      opacity: 1;
+      position: relative;
+      transform: initial;
+    }
+
+    .menu ul ul {
+      left: 0;
+      transform: initial;
+    }
+
+    .menu li>ul ul:hover {
+      transform: initial;
+    }
+  }
+
+  @media (max-width: 480px) {}
+
+  @media (max-width: 320px) {}
+</style>

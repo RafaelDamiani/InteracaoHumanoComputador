@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>materialize login form</title>
+
+    <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css'>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+    .footer{
+        bottom:0;
+        height:290px;
+        margin-top:40px;
+        width:100%;
+        padding-bottom: 10px;
+        background: #374147;
+        color: #fff;
+    }
+    </style>
+<body>
+    <nav>
+        <a id="resp-menu" class="responsive-menu" href="#"><i class="fa fa-reorder"></i> Menu</a>
+        <ul class="menu">
+            <li><a class="homer" href="home.html"><i class="fa fa-home"></i> HOME</a>
+        
+            </li>
+        
+            <li><a href="#"><i class="fa fa-user"></i> SOBRE O CURSO</a>
+            <ul class="sub-menu">
+                <li><a href="sobre.html">Apresentação</a></li>  
+                <li><a href="projeto_pedagogico.html">Projeto Pedagógico do Curso</a>
+                <li><a href="processo_seletivo.html">Processo Seletivo</a>
+        
+                </li>
+        
+            </ul>
+            </li>
+        
+            </li>        
+            <li><a href="#"><i class="fa fa-sitemap"></i> ALUNOS</a>
+            <ul class="sub-menu">
+                <li><a href="estagios.html">Estágios</a></li>
+                <li><a href="tcc.html">TCCs</a>
+                <li><a href="banco_tcc.html">Banco de TCCs</a>            
+                <li><a href="https://drive.google.com/open?id=14RS1S5Y5VxTXRmgBH_NYQ-5uKIw32YhV">Atividades Formativas</a>
+                <li><a href="http://www.prograd.ufpr.br/portal/copap/formularios/">Formulários</a>
+                </li>
+            </ul>
+            </li>
+            <li><a href="#"><i class="fa fa-exclamation-triangle"></i> LINKS IMPORTANTES</a>
+            <ul class="sub-menu">
+                <li><a href="http://www.pra.ufpr.br/portal/ru/cardapio-2/">Restaurante Universitário</a></li>
+                <li><a href="http://www.pra.ufpr.br/portal/centran/sobre/onibus-intercampi/">Intercampi</a>
+                <li><a href="https://portaldoaluno.ufpr.br/aluno/login.action?error=">Portal do Aluno</a>            
+                <li><a href="pedagogia_ead.html">Pedagogia EAD</a>
+                <li><a href="http://www.prae.ufpr.br/prae/programas-da-prae/">PRAE</a>
+                </li>
+            </ul>
+            
+            <li><a href="contato.html"><i class="fa fa-envelope"></i> CONTATO</a></li>
+            <li><a href="index.html"><i class="fa fa-login"></i> CADASTRO</a>
+        
+            <li><a href="login.html"><i class="fa fa-login" id='login'></i> LOGIN</a>
+        
+        </ul>
+    </nav>       
+
+<div class="container">
+    <div class="center-align">
+        <div class="card login hoverable">
+            <div class="card-image">
+                <img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=User%20Image%20&w=350&h=150"
+                    class="responsive-img">
+                <span class="card-title">Please Login</span>
+            </div>
+            <div class="card-action">
+                <a href="#" class="active green-text">Login</a>                
+            </div>
+            <div class="card-content">
+
+                <form method="post" class="col s12">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input type="email" name="email" id="email" class="validate">
+                            <label for="email">Enter your email</label>
+                        </div>
+
+                        <div class="input-field col s12">
+                            <input type="password" name="password" id="password" class="validate">
+                            <label for="password">Enter your password</label>
+                        </div>
+                    </div>
+<!-- 
+                    <div class="row">
+                        <div class="right-align">
+                            <label>
+                                <a href="/user/forgot-password" class="pink-text"><b>Forgot Password?</b></a>
+                            </label>
+                        </div>
+                    </div> -->
+
+                    <div class="row">
+                        <div class="left-align">
+                            <input type="checkbox" id="test5">
+                            <label for="test5">Remember Me</label>
+                        </div>
+                    </div>
+
+
+                    <div class="row center-align">
+                        <button type="submit" name="btn_login"
+                            class="col s12 btn btn-large waves-effect green">Login</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<footer class="footer">        
+    <div style="display: inline-block; width: 25%; padding-left: 10px;">
+        <br>
+        <div style="width: 120px; margin: auto;">
+            <img style="display: inline-block" src="ananicole.jpg" alt="Foto de Ana Nicole Massaneiro" height="120" width="120"><br>
+        </div>            
+        <p style="line-height: 1.3; text-align: center; width: 100%; font-size: 14px;">
+            <br>
+            <i>Ana Nicole Massaneiro</i><br>
+            <b>Programa há 3 anos</b><br>
+            <b>Foco: </b>Desenvolvimento Mobile<br>
+            <b>Curso: </b>Tecnologia em Análise e Desenvolvimento de Sistemas<br>
+            <div style="width: 30px; margin: auto;"><a href="https://www.linkedin.com/in/ana-nicole-massaneiro/"><img src="logo_linkedin.png" alt="Logo Linkedin" height="30" width="30"></a></div>
+        </p>              
+        </div>
+        <div style="display: inline-block; width: 25%;">
+        <br>
+        <div style="width: 120px; margin: auto;">
+            <img src="rafaeldamiani.png" alt="Foto de Rafael Antonio Damiani" height="120" width="120"><br>
+        </div>            
+        <p style="line-height: 1.3; text-align: center; width: 100%; font-size: 14px;">
+            <br>
+            <i>Rafael Antonio Damiani</i><br>
+            <b>Programa há 2 anos</b><br>
+            <b>Foco: </b>Desenvolvimento Web<br>
+            <b>Curso: </b>Tecnologia em Análise e Desenvolvimento de Sistemas<br>
+            <div style="width: 30px; margin: auto;"><a href="https://www.linkedin.com/in/rafael-damiani-0a3332143/"><img src="logo_linkedin.png" alt="Logo Linkedin" height="30" width="30"></a></div>
+        </p>
+        </div>
+        <div style="display: inline-block; width: 25%;">
+        <br>
+        <div style="width: 120px; margin: auto;">
+            <img src="tiagofrancischini.png" alt="Foto de Tiago Francischini" height="120" width="120"><br>
+        </div>         
+        <p style="line-height: 1.3; text-align: center; width: 100%; font-size: 14px;">
+            <br>
+            <i>Tiago Francischini</i><br>
+            <b>Vasta experiência em manutenção de hardware</b><br>
+            <b>Foco: </b>Redes de Computadores<br>
+            <b>Curso: </b>Tecnologia em Análise e Desenvolvimento de Sistemas<br>   
+            <div style="width: 30px; margin: auto;"><a href="#"><img src="logo_linkedin.png" alt="Logo Linkedin" height="30" width="30"></a></div>
+        </p>               
+        </div>
+    <div style="float: right" class="mapouter"><div class="gmap_canvas"><iframe width="300" height="290" id="gmap_canvas" src="https://maps.google.com/maps?q=Rua%20Gal.%20Carneiro%2C%20460%20-%20Ed.%20D.%20Pedro%20I&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.pureblack.de"></a></div><style>.mapouter{position:relative;text-align:right;height:280px;width:300px;}.gmap_canvas {overflow:hidden;background:none!important;height:290px;width:300px;}</style></div>
+</footer>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js'></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.4.5/js/bootstrapvalidator.min.js'></script>
+<link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css' rel='stylesheet' />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+</main>
+<script src='https://code.jquery.com/jquery-2.1.1.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js'></script>
+
+</body>
+
+</html>
